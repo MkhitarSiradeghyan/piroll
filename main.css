@@ -6,6 +6,8 @@
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -15,8 +17,6 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
-    padding: 0;
-    margin: 0;
 }
 .container {
     width: 94%;
@@ -40,6 +40,10 @@ h1, h2, h3, h4, h5, h6 {
 .main_block {
     width: 50%;
     min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
 }
 
 .main_heading {
