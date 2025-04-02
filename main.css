@@ -1,6 +1,7 @@
 :root {
     --accent-color: #10C9C3;
     --primary-color: #212529;
+    --mid-color: #f9f9f9;
     --light-color: #ffffff;
 }
 
@@ -15,9 +16,16 @@ body {
     min-height: 100vh;
     font-family: "Montserrat", sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: normal;
 }
+
 .container {
     width: 94%;
     height: 100%;
@@ -27,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main {
     height: 100vh;
-
+    background: url("https://irinazorg.github.io/piroll/img/bg__lead.jpg") no-repeat center center / cover;
 }
 
 .main_wrap {
@@ -39,11 +47,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .main_block {
     width: 50%;
-    min-width: 500px;
+    min-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 1em;
+    gap: 2em;
 }
 
 .main_heading {
@@ -53,6 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main_text {
+    width: 90%;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -69,9 +78,11 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--light-color);
     border-radius: 4px;
 }
+
 .about {
     padding: 100px 0;
 }
+
 .about_wrap {
     display: flex;
     justify-content: center;
@@ -79,18 +90,57 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     gap: 24px;
 }
+
 .about_heading {
     font-weight: 500;
     font-size: 32px;
 }
+
 .about_text {
     text-align: center;
     font-family: "Nunito Sans", sans-serif;
     line-height: 1.5;
+    max-width: 400px;
 }
+
 .about_img {
-width: 200px;
+    width: 200px;
 }
-.about_img > img {
+
+.about_img>img {
     width: 100%;
+}
+.skills {
+    background: var(--mid-color);
+}
+.skills_wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.skills_left {
+    padding: 100px 0;
+}
+.skills_heading {
+    
+}
+.skills_block {
+
+}
+.skills_item {
+
+}
+.skills_title {
+
+}
+.skills_text {
+
+}
+.skills_percent {
+
+}
+.skills_line {
+
+}
+.skills_level {
+
 }
