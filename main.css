@@ -2,7 +2,10 @@
     --accent-color: #10C9C3;
     --primary-color: #212529;
     --mid-color: #f9f9f9;
+    --light-bg: #eeeeee;
     --light-color: #ffffff;
+    --heading-size: 32px;
+    --text-size: 16px;
 }
 
 * {
@@ -56,7 +59,7 @@ h6 {
 
 .main_heading {
     font-weight: 500;
-    font-size: 32px;
+    font-size: var(--heading-size);
     color: var(--primary-color);
 }
 
@@ -64,7 +67,7 @@ h6 {
     width: 90%;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--text-size);
 }
 
 .main_button {
@@ -93,7 +96,7 @@ h6 {
 
 .about_heading {
     font-weight: 500;
-    font-size: 32px;
+    font-size: var(--heading-size);
 }
 
 .about_text {
@@ -101,6 +104,7 @@ h6 {
     font-family: "Nunito Sans", sans-serif;
     line-height: 1.5;
     max-width: 400px;
+    font-size: var(--text-size);
 }
 
 .about_img {
@@ -119,28 +123,56 @@ h6 {
 }
 .skills_left {
     padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 .skills_heading {
-    
+    text-transform: capitalize;
+    font-size: var(--heading-size);
+    font-weight: 500;
 }
 .skills_block {
-
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 .skills_item {
-
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 .skills_title {
-
+display: flex;
+gap: 2em;
 }
 .skills_text {
-
+    font-size: 12px;
+    font-weight: 500;
 }
 .skills_percent {
-
+    font-size: 12px;
+    font-weight: 500;
 }
 .skills_line {
-
+    width: 90%;
+    height: 3px;
+    background: var(--light-bg);
 }
 .skills_level {
-
+    width: 75%;
+    background: var(--accent-color);
+    height: 100%;
+}
+#line75 {
+    width: 75%;
+}
+#line90 {
+    width: 90%;
+}
+#line65 {
+    width: 65%;
+}
+.skills_right {
+    background: url("https://irinazorg.github.io/piroll/img/skills_bg.jpg") no-repeat right center / cover;
 }
